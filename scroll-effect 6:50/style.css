@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(250, 237, 221);
+  font-family: 'Bungee Shade', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.content {
+  border: 1px solid rgb(8, 8, 8);
+  border-radius: 5px;
+  background-color: rgb(0, 191, 255);
+  color: rgb(243, 246, 237);
+  height:fit-content;
+  width: fit-content;
+  margin: 25px;
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+  transform: translateX(400%);
+  transition: transform 0.8s ease;
+}
+.content:nth-of-type(odd){
+  transform: translateX(-400%);
+}
+.content.show{
+  transform: translate(0);
+}
